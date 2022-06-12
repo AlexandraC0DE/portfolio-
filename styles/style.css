@@ -1,0 +1,172 @@
+/* -------------- RESET -------------- */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=MuseoModerno:wght@500;900&family=Press+Start+2P&family=Roboto:wght@300&family=Work+Sans:ital,wght@0,200;1,600&display=swap');
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+:root{
+    --background-nav: #1d1b1e;
+    --background-header: #222123;
+    --white-color: #e1e1e1;
+    --primary-color: #9B63CE;
+    --secondary-color: #6095E1;
+    --tertiary-color: #3E2252;
+    --box-shadow-color: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    --box-shadow-secundary-color: rgba(35, 32, 35, 0.5);
+    --title-section-font-size: 2rem;
+    --body-font: 'Roboto', 'Helvetica';
+    --Heading-font: 'MuseoModerno' ;
+    --alternative-font: 'Lobster';
+    --font-mono: 'monospace';
+    --padding-container: 60px 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+   
+}
+/* -------------- NAV BAR -------------- */
+header{
+    display: flex;
+    height: 80px;
+    align-items: center;
+}
+.nav-container{
+    background-color: var(--background-nav);
+    width: 100%;
+}
+.nav-logo .logo-link .logo{
+        width: 300px;
+        margin-left: 20px;
+        margin-top: 10px;
+}
+nav ul{
+    float: right;
+    margin-right: 40px;
+    margin-top: -85px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: var(--white-color);
+    font-size: 18px;
+    font-family: var(--body-font);
+    font-weight: bold; 
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+li a:hover{
+    color: var(--primary-color);
+    transition:.5s; 
+}
+.btn{
+    font-size: 24px;
+    color: var(--white-color);
+    float: right;
+    line-height: 80px;
+    margin-top: 5px;
+    margin-right: 50px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+/* -------------- TITLE HEADER -------------- */
+.wrap-text{
+    text-align: center;
+    color: var(--white-color);
+}
+.buttons{
+    text-align: center;
+}
+
+/* -------------- IMG SECTION -------------- */
+ .banner{
+    background: linear-gradient(to right, rgb(0 0 0 /.6),rgba(127, 48, 141, 0.6)), url(/assets/Teclado.jpg)no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+    background-color: var(--tertiary-color);
+    }
+/* --------------RESPONSIVE Para 1024px   -------------- */
+@media (min-width: 1024px){
+    .logo-link{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+/* --------------RESPONSIVE Para 768px   -------------- */
+@media (max-width: 768px){ 
+    .btn{
+        display: block;
+        margin-right: 120px;
+
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 60vh;
+        background: var(--tertiary-color);
+        opacity: 0.8;
+        top: 167px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 25px;
+    }
+    li a:hover{   
+            background: none;
+        }
+    .check:checked ~ul{
+        left:0;
+    }
+}  
+/* -------------- RESPONSIVE Para 320px -------------- */
+@media only screen and (max-width: 760px) and 
+(min-width: 320px)
+{
+.nav-logo .logo-link .logo{
+        width: 220px;
+        margin-left: 20px;
+        margin-top: 25px;
+}
+    .btn{
+        display: block;
+        margin-right: 40px;
+        margin-top: 10px;
+    }
+    ul{
+        position: fixed;
+        background: var(--tertiary-color);
+        opacity: 0.8;
+        top: 169px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li a{
+        font-size: 22px;
+    }
+}
