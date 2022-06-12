@@ -62,8 +62,8 @@ nav ul li{
 nav ul li a{
     color: var(--white-color);
     font-size: 18px;
-    font-family: var(--body-font);
-    font-weight: bold; 
+    font-family: 'Helvetica';
+    font-weight: 700; 
     padding: 7px 13px;
     border-radius: 3px;
 }
@@ -114,7 +114,6 @@ p{font-size: 1.25em;}
 }
 .buttons{
     text-align: center;
-    text-align: center;
     padding: 20px;
 }
 .button-title{
@@ -142,30 +141,43 @@ p{font-size: 1.25em;}
     height: calc(100vh - 80px);
     background-color: var(--tertiary-color);
     }
- /* -------------- ABOUT ME -------------- */
-  .section-about{
+ /* -------------- ABOUT ME -------------- */ 
+ .section-about{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
   }
   .about-text{
-    width: 50%;
     text-align: initial;
-    padding: 0px 30px;
-    max-width: 600px;
+    padding: 30px;
+    flex-direction: row;
+    margin-bottom: 30px;
+    margin-top: -50px;
+  }
+  .about-me{
+    font-family: 'Helvetica';
+    font-size:4em;
+    font-weight: 700;
+  }
+  .sub-title{
+    font-family: 'Helvetica';
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+  .paragraph-about{
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 70px;
+  }
+  .paragraph{
+    line-height: 1.4;
+  }
+  .academlo{
+    font-weight: bold;
   }
   .container-photo{
     justify-content: center;
     display: flex;
     flex-direction: row;
+    padding-bottom: 50px;
   }
-  .img-photo{
+   .img-photo{
     background-image: url(/assets/alexandra-garcia2-borde-blanco.png);
     background-size: cover;
     background-position: center center;
@@ -173,33 +185,78 @@ p{font-size: 1.25em;}
     width: 400px;
     margin-right: 30px;
     margin-left: 74px;
-    margin-top: 70px;
-    margin-bottom: 50px;
-  } 
-  .img-circle{
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }  
+   .img-circle{
     background-image: url(/assets/circle.svg);
     background-size: cover;
     background-position: center center;
     height: 550px;
     width: 550px;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-bottom: 50px;
     margin-right: 20px;
     transition: 1s ease-in-out;
-  }
-    .img-circle:hover{
+  } 
+    /* .img-circle:hover{
     transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg); */
+.container-about{
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
 }
+.button-about{
+    border: 2px solid var(--tertiary-color);
+    padding: 10px 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: var(--tertiary-color);
+    transition: color .5s;
+    border-radius: 30px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    }
+    .button-about:hover{
+        color:var(--white-color) ;
+        background-color: var(--tertiary-color) ;
+    }
 /* --------------RESPONSIVE Para 1024px   -------------- */
-@media (min-width: 1024px){
-    .logo-link{
-        padding-left: 20px;
+@media only screen and (max-width: 1440px) and 
+(min-width: 1024px){
+    
     }
     nav ul li a{
         font-size: 16px;
     }
-}
+    .about-text{
+        text-align: initial;
+        padding: 30px;
+        flex-direction: row;
+        margin-bottom: 30px;
+        margin-top: 50px;
+      }
+      .container-photo{
+        padding-top: 60px;
+      }
+      .img-circle{
+        height: 500px;
+        width: 500px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        margin-left: 20px;
+        margin-right: 4px;
+      }
+      .img-photo{
+        height: 380px;
+        width: 380px;
+        margin-top: 50px;
+        margin-left: 60px;;
+      }
 /* --------------RESPONSIVE Para 768px   -------------- */
 @media (max-width: 768px){ 
     header{
@@ -242,6 +299,10 @@ p{font-size: 1.25em;}
     .section-about{
         flex-direction: column;
       }
+    .container-photo{
+        margin-bottom: -150px;
+        margin-top: -50px;
+    }
       .img-circle{
         height: 500px;
         width: 500px;
@@ -254,7 +315,10 @@ p{font-size: 1.25em;}
         width: 380px;
         margin-top: 50px;
         margin-left: 60px;;
-      } 
+      }
+      .paragraph{
+        font-size: 16px;
+    } 
 }  
 /* -------------- RESPONSIVE Para 320px -------------- */
 @media only screen and (max-width: 760px) and 
@@ -304,6 +368,20 @@ p{font-size: 1.25em;}
         width: 230px;
         margin-top: 30px;
         margin-left: 35px;
-      } 
-}
+      }
+      .about-me{
+        display: flex;
+        text-align: initial;
+      }
+      .sub-title{
+        text-align: initial;
+      }
+      .paragraph-about{
+        display: flex;
+        text-align: initial;
+      }
+      .paragraph{
+        text-align: initial;
+      }
+    }
 
