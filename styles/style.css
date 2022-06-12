@@ -85,12 +85,18 @@ li a:hover{
 }
 
 /* -------------- TITLE HEADER -------------- */
-.wrap-text{
+.wrap{
     text-align: center;
     color: var(--white-color);
+    padding-top: 200px;
+}
+.wrap-text{
+    font-size: 3vh;
 }
 .buttons{
     text-align: center;
+    text-align: center;
+    padding: 20px;
 }
 
 /* -------------- IMG SECTION -------------- */
@@ -121,8 +127,8 @@ li a:hover{
         position: fixed;
         width: 100%;
         height: 60vh;
-        background: var(--tertiary-color);
-        opacity: 0.8;
+        background: var(--background-nav);
+        /* opacity: 0.8; */
         top: 167px;
         left: 100%;
         text-align: center;
@@ -159,8 +165,8 @@ li a:hover{
     }
     ul{
         position: fixed;
-        background: var(--tertiary-color);
-        opacity: 0.8;
+        background: var(--background-nav);
+        /* opacity: 0.9; */
         top: 169px;
         left: 100%;
         text-align: center;
