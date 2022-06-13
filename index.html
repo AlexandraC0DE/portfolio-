@@ -1,191 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-        name="keywords"
-        content="Alexandra García: full stack web development"
-        />
-        <title>Alexandra García: full stack web development</title>
-        <!-- FAVICON -->
-        <link href="/assets/Favicon-Alexandra.png" type=image/x-icon" rel="icon" />
 
-        <!-- HOJA DE ESTILO CSS -->
-        <link rel="stylesheet" href="./styles/style.css" />
-        <!-- FONTAWESONE -->
-        <script src="https://kit.fontawesome.com/52831fd866.js" crossorigin="anonymous"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Diseño web, Programación, Copywriting, Email marketing, SEO">
+    <title>Alexandra García Web</title>
+    <!-- Favicon -->
+    <link
+        href="https://1.bp.blogspot.com/-eYnKS8pyjIA/YaHDar6rHEI/AAAAAAAAC7w/SZ0B7BtbRZo0TT0O3oCxpSmfKqEalg7IACLcBGAsYHQ/s16000/favicon.png"
+        type="image/x-icon" rel="icon" />
+    <link
+        href="https://1.bp.blogspot.com/-eYnKS8pyjIA/YaHDar6rHEI/AAAAAAAAC7w/SZ0B7BtbRZo0TT0O3oCxpSmfKqEalg7IACLcBGAsYHQ/s16000/favicon.png"
+        type="image/x-icon" rel="shortcut icon" />
+    <!-- HOJA DE ESTILO CSS -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
 
-        <!-- GOOGLE FONT -->
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=MuseoModerno:wght@500;900&family=Press+Start+2P&family=Roboto:wght@300&family=Work+Sans:ital,wght@0,200;1,600&display=swap" rel="stylesheet" />
-    </head>
+<body>
+    <header>
+        <!-- Logo  -->
+        <div class="brand">
+            <a class="logo" title="Inicio" href="#">
+                <img class="logo-image" alt="Logo Alexandra García"
+                    src="https://blogger.googleusercontent.com/img/a/AVvXsEjhnxJIBLysl0OOWNhhdUMugiHDiDXp4LNb8SEqVdWEqnXTwb-XZOc8uck1nvzIYitu9e3OcA_bKWB4TmJDGoPpoKaIxwCAX0y57k8GygoS2nmL6ebEf2ZMKF6bx3reN7aEQvcGMa04ZE8iahwvtawDtgQv5WoEbYszQ0DeXxlX2ElEN7d_g7G9kbmt=s16000">
+            </a>
+        </div>
 
-  <body>
-
-    <header class="hero">
-        <nav class="nav-container">
-
-            <input type="checkbox" id="check" class="check">
-            <label for="check" class="btn">
-                <i class="fa-solid fa-bars"></i>
-            </label>
-
-            <figure class="nav-logo">
-                <a href="/" class="logo-link">
-                    <img src="/assets/logo-alexandra-garcia.svg" class="logo" alt="Logo Alexandra García">
-                </a>
-            </figure>
-
-            <ul>
-                <li><a class="nav-link" href="#">Home</a></li>
-                <li><a class="nav-link" href="#about">About</a></li>                
-                <li><a class="nav-link" href="#works">Works</a></li>
-                <li><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>            
-
+        <nav id="menu" class="menu">
+            <ul class="menu-list">
+                <li class="menu-item"><a class="menu-link" href="#inicio">Inicio</a></li>
+                <li class="menu-item"><a class="menu-link" href="#about-me">Sobre mí</a></li>
+                <li class="menu-item"><a class="menu-link" href="#portafolio">Portfolio</a></li>
+            </ul>
+            <div id="equis" class="equis">&#215;</div>
         </nav>
-
-    
-       
+        <div id="menu-hamburguesa" class="menu-hamburguesa">&#8801;</div>
     </header>
-    <section>
-    <div class="banner">
-                
-        <div class="wrap">
-            <div class="wrap-text">
-                <p class="hi">Hi, my name is</p>
-                <h1 class="name">Alexandra García<span>.</span></h1>
-                <h2>I build things for the web <span>.</span></h2>
+    <!-- HOME -->
+    <main class="contenido-banner">
+        <section id="inicio" class="banner">
+            <h1 class="title-profession">Desarrollo Web<span class="title-modification">.</span></h1>
+            <div class="img-paragraph-banner-container">
+                <img class="personal-photo" src="./assets/alexandra-garcia2-borde-blanco.png" alt="Foto personal">
+                <div class="paragraph-cs-container">
+                    <p class="paragraph-banner">Con el diseño apropiado de tu sitio web, la misión y
+                        valor de tu negocio llegará más fácil y rápido. Aunque el momento 
+                        que causará una verdadera conexión con tus seguidores 
+                        será el texto de tu web. Ten presente que debe existir un equilibrio
+                        entre imagen y texto para causar el impacto deseado.
+                    </p>
+                    <div class="boton">
+                        <a href="./assets/CV-Alexandra-García-JUN2022.pdf" class="boton-cv" download="cv-alexandra-garcia.pdf">Descargar CV</a>
+                    </div>
+                </div>
             </div>
-        </div>
-            <div class="box-button">
-                <div class="buttons">
-                <a href="./assets/CV-Alexandra-García-JUN2022.pdf" class="button" download="Alexandra-García-JUN2022.pdf">
-                    <button class="button-title">Download CV</button>
-                </a> 
-                <a href="#contact" class="button">
-                    <button class="button-title">Projects</button>
-                </a>
-                </div>   
-            </div>
-    <div> 
-    </section>
+        </section>
 
-    <main>
-        <section class="about">
-          <div class="section-about">
-                
-                    <div class="container-photo">
-                        <div class="img-circle">
-                            <div class="img-photo"></div>
+        <section id="about-me" class="about-me">
+            <h2 class="title-section">Sobre mí</h2>
+            <div class="about-me-description-container">
+                <div>
+                    <p class="description-about-me">
+                        Hace varios años atrás el mundo de la tecnología para mí eran solo
+                        videojuegos entretenidos como The Sims o The Roller Coaster Tycon.
+                        Al dejar atrás la infancia, fui descubriendo que se podían hacer cosas
+                        mucho más interesantes con un simple ordenador.
+                    </p>
+                    <p class="description-about-me">
+                        Aunque en aquella época el acceso a la información era todavía muy limitado,
+                        supe que ese era el camino hacia algo mucho más grande e interesante. Así que 
+                        al terminar el bachillerato me inscribí en
+                        la carrera de Técnico superior en Diseño gráfico editorial.
+                    </p>
+                    <p class="description-about-me">
+                        En un principio creí que el diseño gráfico tenía que ver con toda la parte visual de las
+                        páginas web, supe después que es una profesión mucho más amplia que requiere conocimiento
+                        sobre lógica, psicología del color, geometría, equilibrio visual, historia, etc. 
+                        Además de tener siempre en claro la opinión del consumidor.
+                    </p>
+                </div>
+                <div>
+                    <p class="description-about-me">
+                        Yo seguí adelante con mis estudios. Aunque siempre sentí
+                        curiosidad por la informática, así que al terminar mi carrera decidí tomar un curso
+                        de diseño de páginas web y creo que allí fue cuando comenzó todo. 
+                    </p>
+                    <p class="description-about-me">
+                        En ese momento la programación se trataba de descubrir que se podía hacer e intentar
+                        aplicarla con todo lo aprendido en diseño. Luego avancé y conseguí un empleo como 
+                        content writter, descubriendo por primera vez el mundo del SEO y el Copywriting que si me lo preguntas, pienso que ambas profesiones se llevan muy bien de la mano.
+                    </p>
+                    <p class="description-about-me">
+                        A día de hoy sigo descubriendo nuevos lenguajes de programación como JavaScript, HTML, CSS y React. La idea es continuar con esa misma línea de aprendizaje, ya que todo lo que sé hasta ahora se complementa como en un engranaje.
+                    </p>
+                    <p class="description-about-me">
+                        Cuando eres desarrollador web las posibilidades son infinitas, por eso amo este mundo
+                        y lo mejor de todo es ¡El trabajo en equipo! =)
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <section id="portafolio" class="portafolio">
+            <h2 class="title-section title-portafolio">Portafolio</h2>
+            <div class="project-container">
+                <article class="project">
+                    <a href="https://quotespurple.netlify.app/" target="_blank">
+                        <img class="project-img" src="./assets/project-1.jpg" alt="imagen primer proyecto">
+                        <div class="project-description-container">
+                            <h2 class="project-title">Generador de frases</h2>
+                            <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis autem explicabo recusandae, odit vitae aspernatur amet.</p>
                         </div>
-                    </div>
-
-              <div class="about-text">
-                  <h2 class="about-me">About Me</h2>
-                  <h2 class="sub-title">Designer <span>& Developer</span></h2>
-
-                    <div class="paragraph-about">
-                        <p class="paragraph">Hello! My name is Alexandra and everyone calls me Alex. I enjoy developing applications for the Internet.
-                        My interest in web development started in 2018 when I decided to try editing custom Blogger themes. <br>
-                        <br>
-                        It turns out that customizing the HTML of Sora's templates taught me a lot about HTML and CSS! I went ahead with the idea of ​​creating my own website and today I have the privilege of being part of the  
-                        <a class="academlo" href="https://certificates.academlo.com/en/credentials/alexandragarcia229546">Academlo</a> 
-                        web development academy, a great opportunity to learn the basics of web programming.
-                        </p>
-                    </div>
-                     <!-- <br> My main focus these days is to create applications that are minimalistic, easy to access and so that the user can have a pleasant user experience.
-                      
-                      Here are some technologies I've been working with recently:<br>
-                      <br>
-                      JavaScript (ES6+)
-                      <br>React
-                      <br> node.js
-                      <br> wordpress</p> -->
-                      <br>
-                      <div class="container-about">
-                  <button class="button-about" type="button">Contac me</button>
-                </div>
-              </div>
-          </div>
-      </section>
-
-      <section id="projects">
-        <div class="wrapper">
-          <div class="card">
-            <div class="card-banner">
-              <p class="category-tag popular">User Aplication</p>
-              <img class="banner-img" src='/assets/projects/Quotes-App-CRUD.png' alt='User-App'>
+                    </a>
+                </article>
+                <article class="project">
+                    <a href=" https://lucid-clarke-4e0a70.netlify.app/" target="_blank">
+                        <img class="project-img" src="./assets/project-2.jpg" alt="imagen segundo proyecto">
+                        <div class="project-description-container">
+                            <h2 class="project-title">Aplicación clima</h2>
+                            <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis autem explicabo recusandae, odit vitae aspernatur amet.</p>
+                        </div>
+                    </a>
+                </article>
             </div>
-            <div class="card-body">
-                <a href="https://quiet-selkie-a95b1d.netlify.app/" target="_blank"><p class="blog-hashtag">+Info</p></a>
-              <h2 class="blog-title">
-                CRUD REST API with React JS</h2>
-              <p class="blog-description">A CRUD was performed to operate on the different forms that the HTTP verbs contemplate.
+        </section>
 
-                to be able to view group and individual resources, edit, delete and create new resources to our application.</p>
-      
-              <div class="card-profile">
-                <img class="profile-img" src='/assets/react.png' alt='user app'>
-                <div class="card-profile-info">
-                  <h3 class="profile-name">By Alexandra García</h3>
-                  <p class="profile-followers">Made in React © 2022</p>
-                </div>
-              </div>
-            </div>
-          </div>
-      
-          <div class="card">
-            <div class="card-banner">
-              <p class="category-tag technology">Interactive Calculator</p>
-              <img class="banner-img" src='/assets/projects/calculator-app.png' alt='calculator'>
-            </div>
-            <div class="card-body">
-                <a href="https://iridescent-parfait-f02f34.netlify.app/" target="_blank"> <p class="blog-hashtag">+ Info</p></a>
-              <h2 class="blog-title">Development of reactive applications</h2>
-              <p class="blog-description">Interactive Calculator that performs the four basic arithmetic operations.
+        <footer>
+            <div class="footer-icons-container">
 
-                Applying flexbox and implementing the props.children.</p>
-      
-              <div class="card-profile">
-                <img class="profile-img" src='/assets/react.png' alt='Logo react'>
-                <div class="card-profile-info">
-                  <h3 class="profile-name">By Alexandra García</h3>
-                  <p class="profile-followers">Made in React © 2022</p>
-                </div>
-              </div>
-            </div>
-          </div>
-      
-          <div class="card">
-            <div class="card-banner">
-              <p class="category-tag psychology">Quotes App</p>
-              <img class="banner-img" src='/assets/projects/Quotes-App.png' alt=''>
-            </div>
-            <div class="card-body">
-              
-              <a href="https://rainbow-quokka-6352ac.netlify.app/" target="_blank"><p class="blog-hashtag">+ Info</p></a>
-              <h2 class="blog-title">Handling states with React</h2>
-              <p class="blog-description">A random dating app with the ability to share the quote in a tweet. pure javascript css handling a .JSON file/p>
-      
-              <div class="card-profile">
-                <img class="profile-img" src='/assets/react.png' alt='Quotes app'>
-                <div class="card-profile-info">
-                  <h3 class="profile-name">By Alexandra García</h3>
-                  <p class="profile-followers">Made in React © 2022</p>
-                </div>
-              </div>
-            </div>
-          </div>
-      
-        </div>
-      </section>
+                <a href="https://www.linkedin.com/in/alexandra-garc%C3%ADa-33662018a/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin"
+                        width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ABABAB" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                        <line x1="8" y1="11" x2="8" y2="16" />
+                        <line x1="8" y1="8" x2="8" y2="8.01" />
+                        <line x1="12" y1="16" x2="12" y2="11" />
+                        <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                    </svg>
+                </a>
 
-      </main>
-      
-  </body>
-  
+                <a href="https://twitter.com/arigrafik" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter"
+                        width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ABABAB" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                    </svg>
+                </a>
+
+                <a href="https://github.com/AlexandraC0DE" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github"
+                        width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ABABAB" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                    </svg>
+                </a>
+            </div>
+            <p class="text-copyright">Hecho con <span class="cora">&hearts;</span> por Alexandra García <br>© 2022</p>
+    </main>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
 
 </html>
